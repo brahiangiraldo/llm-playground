@@ -1,8 +1,17 @@
 from fastapi import FastAPI 
 from llm_gemini import geminiThinkingLow
+from fastapi.middleware.cors import CORSMiddleware 
 
 #Crear una instancia de la aplicación FastAPI
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    # allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+) 
 
 # print(response)
 @app.get("/")

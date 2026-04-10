@@ -31,7 +31,7 @@ def geminiThinkingLow(content):
         contents=content,
         config=types.GenerateContentConfig(
             thinking_config=types.ThinkingConfig(thinking_level="low"),
-            system_instruction="You are a very useful assistant who provides concise answers with explanations; you will respond with the most evil answer possible,Give a very short answer of 10 words, response in spanish"
+            system_instruction="responde con menos de 20 palabras en un contexto coherente"
         ),
     )     
     return response.text 

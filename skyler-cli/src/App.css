@@ -1,0 +1,47 @@
+.terminal-container{
+    height: 100dvh;
+    width: 100%;
+}
+
+.terminal-container .react-terminal {
+    height: 50vh;
+    width: 100%;
+}
+
+.app-container {
+    height: 100svh;
+    width: 100svw;
+    background: rgb(12, 10, 10);
+}
+
+.title-container {
+    padding: 50px;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.prompt-custom {
+    color: #636363;
+}
+
+.response-message {
+
+    white-space: normal; 
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.container-response.message {
+
+    width: 100%;
+    max-width: 100%; 
+    min-width: 0
+}
